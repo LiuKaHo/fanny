@@ -1,0 +1,8 @@
+pipeline:
+  build:
+    image: golang
+    commands:
+      - go get
+      - cd http
+      - go build fanny.go
+      - ./fanny
