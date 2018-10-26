@@ -23,6 +23,7 @@ type MyKey struct {
 }
 
 func main() {
+	//test
 	http.HandleFunc("/api/download", beginDown)
 	http.HandleFunc("/", index)
 	err := http.ListenAndServe(":8888", nil)
